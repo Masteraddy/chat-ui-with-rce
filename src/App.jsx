@@ -280,6 +280,7 @@ function App() {
                 inputStyle={{
                   overflow: 'hidden',
                   height: isRecording ? '0' : '',
+                  width: isRecording ? '0' : '',
                 }}
                 onChange={(e) => setChatText(e.target.value)}
                 value={chattext}
@@ -318,7 +319,7 @@ function App() {
                     />
                     {!showRecordBtn ? (
                       <button
-                        className="w-10 h-10 mx-2 pr-2 pl-0 rounded-full flex justify-center items-center bg-green-600"
+                        className="w-10 h-10 mx-2 pr-2 pl-0 rounded-full flex justify-center items-center bg-blue-700"
                         onClick={handleSend}
                       >
                         <svg
@@ -340,7 +341,7 @@ function App() {
                       </button>
                     ) : (
                       <button
-                        className={`w-10 h-10 mx-2 px-2 rounded-full flex justify-center items-center bg-green-600 ${
+                        className={`w-10 h-10 mx-2 px-2 rounded-full flex justify-center items-center bg-blue-700 ${
                           isRecording && 'animate-pulse'
                         }`}
                         onClick={() => {
