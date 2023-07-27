@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.forced-row-rev{
+ flex-direction: row-reverse !important;
+}
+
+.fhidden{
+  display: none !important;
+}
+
+@media (min-width: 768px) {
+  .backbtn {
+    display: none !important;
+  }
+}
